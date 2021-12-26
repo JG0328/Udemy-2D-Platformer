@@ -809,7 +809,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -824,7 +824,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1799785011}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 87d0a74175591c14abc9f4adf9284c0d, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -843,6 +843,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e47dfba846f224daa600be93cb42a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 7.5
+  theRB: {fileID: 1799785014}
+  jumpForce: 15
 --- !u!1 &1861275301
 GameObject:
   m_ObjectHideFlags: 0
