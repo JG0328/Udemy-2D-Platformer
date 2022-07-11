@@ -15,18 +15,6 @@ public class LevelManager : MonoBehaviour
         instance = this;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void RespawnPlayer()
     {
         StartCoroutine(RespawnCo());
@@ -35,6 +23,7 @@ public class LevelManager : MonoBehaviour
     private IEnumerator RespawnCo()
     {
         PlayerController.instance.gameObject.SetActive(false);
+        AudioManager.instance.PlaySFX(8);
 
         yield return new WaitForSeconds(waitToRespawn);
 
